@@ -215,6 +215,7 @@
         function updateRows() {
             document.querySelector(".loader").style.display = "";
             document.querySelector("table").style.display = "none";
+            document.querySelector(".tests-cnt").innerHTML = "";
 
             var filters = {};
             document.querySelectorAll("select").forEach(el => {

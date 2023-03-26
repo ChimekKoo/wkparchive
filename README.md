@@ -16,7 +16,7 @@ Everything in `docs/pdf` directory was downloaded (and converted from DOCX to PD
 ## Development
 ```
 git clone https://github.com/chimekkoo/wkparchive.git
-pip install -r requirements # only flask as a static server
+pip install -r requirements-dev.txt # only flask as a static server
 python3 srv.py
 ```
 and open `localhost:5000`.
