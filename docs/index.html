@@ -262,6 +262,7 @@
         }
 
         updateRows();
+        sortTable(2); sortTable(2); // sort by year in descending order
         document.querySelectorAll("select").forEach(el => el.onchange = updateRows);
     </script>
 </body>
