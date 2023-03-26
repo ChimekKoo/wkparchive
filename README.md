@@ -1,5 +1,5 @@
 # wkparchive
-![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=http%3A%2F%2Fchimekkoo.github.io/wkparchive)  
+[![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=http%3A%2F%2Fchimekkoo.github.io/wkparchive)](https://chimekkoo.github.io/wkparchive)  
 
 Simple but useful archive of polish provincial subject competitions (Wojewódzkie Konkursy Przedmiotowe).  
 
