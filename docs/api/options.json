@@ -1,0 +1,148 @@
+{
+  "type": [
+    ["test", "Test"],
+    ["answers", "Odpowiedzi"]
+  ],
+  "year": [
+    ["2022/2023", "2022/2023"],
+    ["2021/2022", "2021/2022"],
+    ["2020/2021", "2020/2021"],
+    ["2019/2020", "2019/2020"],
+    ["2018/2019", "2018/2019"],
+    ["2017/2018", "2017/2018"],
+    ["2016/2017", "2016/2017"],
+    ["2015/2016", "2015/2016"],
+    ["2014/2015", "2014/2015"],
+    ["2013/2014", "2013/2014"],
+    ["2012/2013", "2012/2013"]
+  ],
+  "stage": [
+    ["1", "(1) szkolny"],
+    ["2", "(2) rejonowy"],
+    ["3", "(3) wojewódzki"]
+  ],
+  "subject": [
+    [
+      "biologia",
+      "biologia"
+    ],
+    [
+      "chemia",
+      "chemia"
+    ],
+    [
+      "fizyka",
+      "fizyka"
+    ],
+    [
+      "geografia",
+      "geografia"
+    ],
+    [
+      "historia",
+      "historia"
+    ],
+    [
+      "język angielski",
+      "język angielski"
+    ],
+    [
+      "język francuski",
+      "język francuski"
+    ],
+    [
+      "język hiszpański",
+      "język hiszpański"
+    ],
+    [
+      "język niemiecki",
+      "język niemiecki"
+    ],
+    [
+      "język polski",
+      "język polski"
+    ],
+    [
+      "język rosyjski",
+      "język rosyjski"
+    ],
+    [
+      "konkurs wiedzy o mazowszu",
+      "konkurs wiedzy o mazowszu"
+    ],
+    [
+      "matematyka",
+      "matematyka"
+    ],
+    [
+      "wiedza o społeczeństwie",
+      "wiedza o społeczeństwie"
+    ]
+  ],
+  "voivodeship": [
+    [
+      "dolnośląskie",
+      "dolnośląskie"
+    ],
+    [
+      "kujawsko-pomorskie",
+      "kujawsko-pomorskie"
+    ],
+    [
+      "lubelskie",
+      "lubelskie"
+    ],
+    [
+      "lubuskie",
+      "lubuskie"
+    ],
+    [
+      "mazowieckie",
+      "mazowieckie"
+    ],
+    [
+      "małopolskie",
+      "małopolskie"
+    ],
+    [
+      "opolskie",
+      "opolskie"
+    ],
+    [
+      "podkarpackie",
+      "podkarpackie"
+    ],
+    [
+      "podlaskie",
+      "podlaskie"
+    ],
+    [
+      "pomorskie",
+      "pomorskie"
+    ],
+    [
+      "warmińsko-mazurskie",
+      "warmińsko-mazurskie"
+    ],
+    [
+      "wielkopolskie",
+      "wielkopolskie"
+    ],
+    [
+      "zachodniopomorskie",
+      "zachodniopomorskie"
+    ],
+    [
+      "łódzkie",
+      "łódzkie"
+    ],
+    [
+      "śląskie",
+      "śląskie"
+    ],
+    [
+      "świętokrzyskie",
+      "świętokrzyskie"
+    ]
+  ]
+}

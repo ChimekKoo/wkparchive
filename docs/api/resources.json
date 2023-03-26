@@ -1,0 +1,170 @@
+[
+  {
+    "id": "95047462",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "1",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "94191499",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "2",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "84940529",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "2",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "84636842",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "3",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "84355943",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "3",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "78112113",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "3",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "77500554",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "2",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "76030023",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "3",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "72702781",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "2",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "70669109",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "1",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "63618360",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "1",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "63047330",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "2",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "50023008",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "3",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "41625038",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "1",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "36477030",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "2",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "35494081",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "1",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "33144624",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "3",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "25952529",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "3",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "22662393",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "1",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "18151607",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "2",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  },
+  {
+    "id": "16426391",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "1",
+    "subject": "chemia",
+    "voivodeship": "łódzkie"
+  }
+]
