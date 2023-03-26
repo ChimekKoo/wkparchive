@@ -187,5 +187,176 @@
     "subject": "chemia",
     "voivodeship": "łódzkie",
     "school": "szkoła podstawowa"
+  },
+  {
+    "id": "11542938",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "1",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "14073459",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "1",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "19823611",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "2",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "21273078",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "2",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "21395573",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "1",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "23191743",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "2",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "26745181",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "3",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "29250683",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "1",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "31361822",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "3",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "gimnazjum"
+  },
+  {
+    "id": "35577556",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "2",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "50589220",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "1",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "52570749",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "1",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "55930416",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "2",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "64117014",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "3",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "76548283",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "3",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "85551395",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "2",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "gimnazjum"
+  },
+  {
+    "id": "88558591",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "2",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "95728091",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "1",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "gimnazjum"
+  },
+  {
+    "id": "99275665",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "3",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
   }
 ]
