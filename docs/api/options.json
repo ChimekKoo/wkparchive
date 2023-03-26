@@ -1,7 +1,11 @@
 {
   "type": [
-    ["test", "Test"],
-    ["answers", "Odpowiedzi"]
+    ["test", "test"],
+    ["answers", "odpowiedzi"]
+  ],
+  "school": [
+    ["szkoła podstawowa", "szkoła podstawowa"],
+    ["gimnazjum", "gimnazjum"]
   ],
   "year": [
     ["2022/2023", "2022/2023"],

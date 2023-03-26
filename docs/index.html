@@ -101,7 +101,7 @@
         
         <a href="index.html" title="Archiwum WKP (strona główna)" style="text-decoration: none; color: black"><h1>Archiwum WKP</h1></a>
 
-        <form style="vertical-align: middle; margin-top: 14px">
+        <form style="vertical-align: middle; margin-top: 16px">
             <label for="form-voivodeship">Województwo:</label>
             <select id="form-voivodeship"></select>
             &emsp;
@@ -116,6 +116,9 @@
             &emsp;
             <label for="form-type">Typ:</label>
             <select id="form-type"></select>
+            &emsp;
+            <label for="form-school">Szkoła:</label>
+            <select id="form-school"></select>
         </form>
 
         <div class="loader"></div>
@@ -129,7 +132,8 @@
                     <td onclick="sortTable(1)">Przedmiot</td>
                     <td onclick="sortTable(2)">Rok</td>
                     <td onclick="sortTable(3)">Etap</td>
-                    <td onclick="sortTable(4)">Typ</td>
+                    <td onclick="sortTable(4)">Szkoła</td>
+                    <td onclick="sortTable(5)">Typ</td>
                 </tr>
             </thead>
             <tbody>
@@ -195,8 +199,7 @@
 
         var optionsMapAll = {};
 
-        var optionsResp = getJSON("api/options.json");
-        Object.entries(optionsResp).forEach(el => {
+        Object.entries(getJSON("api/options.json")).forEach(el => {
             var key = el[0];
             var options = el[1];
             var optionsMap = arrayToObj(options);
@@ -244,6 +247,7 @@
                     + `<td>${optionsMapAll.subject[t.subject]}</td>`
                     + `<td>${optionsMapAll.year[t.year]}</td>`
                     + `<td>${optionsMapAll.stage[t.stage]}</td>`
+                    + `<td>${optionsMapAll.school[t.school]}</td>`
                     + `<td>${optionsMapAll.type[t.type]}</td>`
                     + "</tr>";
                 
