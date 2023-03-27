@@ -358,5 +358,194 @@
     "subject": "fizyka",
     "voivodeship": "łódzkie",
     "school": "szkoła podstawowa"
+  },
+  {
+    "id": "10627090",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "3",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "12372141",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "3",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "14083660",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "2",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "18632369",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "1",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "19697253",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "3",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "31519147",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "3",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "gimnazjum"
+  },
+  {
+    "id": "37804166",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "2",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "gimnazjum"
+  },
+  {
+    "id": "44631191",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "2",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "54986393",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "1",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "61928400",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "2",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "62460564",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "1",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "65869174",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "3",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "66829074",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "2",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "68323269",
+    "type": "test",
+    "year": "2018/2019",
+    "stage": "1",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "gimnazjum"
+  },
+  {
+    "id": "72745908",
+    "type": "answers",
+    "year": "2021/2022",
+    "stage": "1",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "74323533",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "3",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "80704148",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "1",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "82398823",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "1",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "82658486",
+    "type": "test",
+    "year": "2020/2021",
+    "stage": "3",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "86830253",
+    "type": "test",
+    "year": "2019/2020",
+    "stage": "2",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "88597774",
+    "type": "test",
+    "year": "2021/2022",
+    "stage": "2",
+    "subject": "biologia",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
   }
 ]
