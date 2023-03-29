@@ -360,6 +360,24 @@
     "school": "szkoła podstawowa"
   },
   {
+    "id": "12196160",
+    "type": "test",
+    "year": "2022/2023",
+    "stage": "3",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
+    "id": "39602533",
+    "type": "answers",
+    "year": "2022/2023",
+    "stage": "3",
+    "subject": "fizyka",
+    "voivodeship": "łódzkie",
+    "school": "szkoła podstawowa"
+  },
+  {
     "id": "10627090",
     "type": "test",
     "year": "2021/2022",
