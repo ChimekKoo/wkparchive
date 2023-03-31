@@ -20,3 +20,14 @@ pip install -r requirements-dev.txt # only flask as a static server
 python3 srv.py
 ```
 and open `localhost:5000`.
+
+## PDF preparation
+- download your file
+- convert it to PDF (for example [cloudconvert](https://cloudconvert.com/) does it really well)
+- rename to format `id.pdf` (where `id` is some unique random 8-digit number)
+- run `cpdf -remove-metadata id.pdf -o id.pdf` to remove any metadata (replace `id`)
+- run `exiftool -Language=pl-PL id.pdf && rm -f id.pdf_original` to set language metadata to polish and remove some exiftool leftovers (replace `id`)
+- run `qpdf --linearize --replace-input id.pdf` to linearize the PDF (replace `id`)
+- move your PDFs to `docs/pdf` folder (be careful to not overwrite any existing files - choose a not taken id)
+- add new entry `docs/api/resources.json` (template soon)
+- (commit and push your changes)
