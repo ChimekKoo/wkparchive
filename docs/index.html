@@ -89,6 +89,19 @@
             display: inline-block;
             margin-top: 10px;
         }
+
+        #btn-show-more {
+            display: inline-block;
+            padding: 6px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: white;
+            font-size: 1.15em;
+            cursor: pointer;
+        }
+        #btn-show-more:active {
+            background-color: #dddddd;
+        }
     </style>
 </head>
 <body style="text-align: center">
@@ -125,10 +138,13 @@
             <select id="form-school"></select>
         </form>
 
-        <div class="loader"></div>
-        <br>
+        <!-- <div class="loader"></div>
+        <br> -->
 
-        <span class="tests-cnt" display="hidden" style="display: inline-block; font-size: 1.1em; margin: 12px 0px 8px 0px"></span>
+        <span display="hidden" style="display: inline-block; font-size: 1.1em; margin: 12px 0px 8px 0px">
+            Znaleziono <span class="found-cnt"></span> materiałów (widoczne <span class="loaded-cnt"></span>).
+            Jeśli czegoś Ci brakuje, możesz zgłosić to <a href="https://forms.gle/1XPQi6AP4aLgU8dYA" target="_blank">tutaj</a>.
+        </span>
         <table class="w3-table-all" style="margin: auto">
             <thead>
                 <tr>
@@ -144,27 +160,49 @@
                 
             </tbody>
         </table>
+        <br>
+        <button id="btn-show-more">Pokaż więcej</button>
     </div>
 
     <script>
-        document.querySelector(".loader").style.display = "";
-        document.querySelector("table").style.display = "none";
+        const step = 50;
+
+        var resources = [];
+        var optionsMapAll = {};
+
+        /*function toggleLoader(state, synctable=true) {
+            if (state) {
+                document.querySelector(".loader").style.display = "";
+                if (synctable) {
+                    //document.querySelector(".tests-cnt").innerHTML = "";
+                    document.querySelector("table").style.display = "none";
+                }
+            } else {
+                document.querySelector(".loader").style.display = "none";
+                if (synctable) {
+                    //document.querySelector(".tests-cnt").innerHTML = `Znaleziono ${resources.length} materiałów. Jeśli czegoś Ci brakuje, możesz zgłosić to <a href="https://forms.gle/1XPQi6AP4aLgU8dYA" target="_blank">tutaj</a>.`;
+                    document.querySelector("table").style.display = "";
+                }
+            }
+        }
+        toggleLoader(false);*/
 
         function arrayToObj(arr) {
             var obj = {};
             arr.forEach(el => obj[el[0]] = el[1]);
             return obj;
         }
-
         function getJSON(url) {
             var rq = new XMLHttpRequest();
             rq.open("GET", url, false); // false means not asynchronous
             rq.send(null);
             return JSON.parse(rq.responseText);
         }
-
         // https://www.w3schools.com/howto/howto_js_sort_table.asp
         function sortTable(n) {
+            if (document.querySelector("tbody").childElementCount > step) {
+                if (!confirm("Tabela jest bardzo długa i sortowanie może zająć dużo czasu. Czy napewno kontynuować?")) return;
+            }
             var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
             table = document.querySelector("table");
             switching = true;
@@ -200,74 +238,88 @@
                 }
             }
         }
-
-        var optionsMapAll = {};
-
-        Object.entries(getJSON("api/options.json")).forEach(el => {
-            var key = el[0];
-            var options = el[1];
-            var optionsMap = arrayToObj(options);
-
-            optionsMapAll[key] = optionsMap;
-            
-            var selectEl = document.querySelector("#form-"+key);
-            selectEl.innerHTML = '<option value="" selected>(brak filtra)</option>';
-            options.forEach(opt => {
-                var val = opt[0];
-                var text = opt[1];
-                selectEl.innerHTML += `<option value="${val}">${text}</option>`;
-            });
-        });
-
-        function updateRows() {
-            document.querySelector(".loader").style.display = "";
-            document.querySelector("table").style.display = "none";
-            document.querySelector(".tests-cnt").innerHTML = "";
-
+        function getFilters() {
             var filters = {};
             document.querySelectorAll("select").forEach(el => {
                 var key = el.id.split("-")[1];
                 var val = el.value;
                 if (val != "") filters[key] = val;
             });
-
-            var cnt = 0;
+            return filters;
+        }
+        function updateOptions() {
+            optionsMapAll = {};
+            Object.entries(getJSON("api/options.json")).forEach(el => {
+                var key = el[0];
+                var options = el[1];
+                var optionsMap = arrayToObj(options);
+    
+                optionsMapAll[key] = optionsMap;
+                
+                var selectEl = document.querySelector("#form-"+key);
+                selectEl.innerHTML = '<option value="" selected>(brak filtra)</option>';
+                options.forEach(opt => {
+                    var val = opt[0];
+                    var text = opt[1];
+                    selectEl.innerHTML += `<option value="${val}">${text}</option>`;
+                });
+            });
+        }
+        function updateHeadText() {
+            document.querySelector(".found-cnt").innerHTML = resources.length;
+            document.querySelector(".loaded-cnt").innerHTML = document.querySelector("tbody").childElementCount;
+        }
+        function updateResources() {
+            resources = [];
             document.querySelector("tbody").innerHTML = "";
-            getJSON("api/resources.json").forEach(t => {
-
+            updateHeadText();
+            var filters = getFilters();
+            getJSON("/api/resources.json").forEach(resource => {
                 var skip = false;
                 Object.entries(filters).forEach(filter => {
                     var key = filter[0];
                     var value = filter[1];
-                    if (t[key] != value) {
+                    if (resource[key] != value) {
                         skip = true;
                         return;
                     }
                 });
                 if (skip) return;
-
-                var tr = `<tr onclick="window.open('pdf/${t.id}.pdf', '_blank')">`
-                    + `<td>${optionsMapAll.voivodeship[t.voivodeship]}</td>`
-                    + `<td>${optionsMapAll.subject[t.subject]}</td>`
-                    + `<td>${optionsMapAll.year[t.year]}</td>`
-                    + `<td>${optionsMapAll.stage[t.stage]}</td>`
-                    + `<td>${optionsMapAll.school[t.school]}</td>`
-                    + `<td>${optionsMapAll.type[t.type]}</td>`
-                    + "</tr>";
-                
-                document.querySelector("tbody").innerHTML += tr;
-
-                cnt += 1;
+                resources.push(resource);
             });
-
-            document.querySelector(".loader").style.display = "none";
-            document.querySelector(".tests-cnt").innerHTML = `Znaleziono ${cnt} materiałów. Jeśli czegoś Ci brakuje, możesz zgłosić to <a href="https://forms.gle/1XPQi6AP4aLgU8dYA" target="_blank">tutaj</a>.`;
-            document.querySelector("table").style.display = "";
+            updateHeadText()
+        }
+        function addRow(resource) {
+            var tr = `<tr onclick="window.open('pdf/${resource.id}.pdf', '_blank')">`;
+            Object.entries(optionsMapAll).forEach(el => {
+                var field = el[0];
+                tr += `<td x-value="${resource[field]}">${optionsMapAll[field][resource[field]]}</td>`;
+            });
+            document.querySelector("tbody").innerHTML += tr;
         }
 
-        updateRows();
-        sortTable(2); sortTable(2); // sort by year in descending order
-        document.querySelectorAll("select").forEach(el => el.onchange = updateRows);
+        window.onload = () => {
+            updateOptions();
+            updateResources();
+            for (var i=0; i<Math.min(step,resources.length); i++) addRow(resources[i]);
+            updateHeadText();
+        };
+
+        //sortTable(2); sortTable(2); // sort by year in descending order
+        document.querySelectorAll("select").forEach(el => el.onchange = () => {
+            updateResources();
+            clearRows();
+            for (var i=0; i<Math.min(step,resources.length); i++) addRow(resources[i]);
+            updateHeadText();
+        });
+
+        document.querySelector("#btn-show-more").addEventListener("click", () => {
+            var cnt_old = document.querySelector("tbody").childElementCount;
+            for (var i=cnt_old; i<Math.min(cnt_old+step,resources.length); i++) addRow(resources[i]);
+            if (document.querySelector("tbody").childElementCount >= resources.length)
+                document.querySelector("#btn-show-more").style.display = "none";
+            updateHeadText();
+        });
     </script>
 </body>
 </html>

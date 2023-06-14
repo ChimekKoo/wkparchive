@@ -1,4 +1,6 @@
-# temporary server (only for development)
+#!/usr/bin/env python3
+
+#! temporary server (only for development)
 
 from flask import Flask, redirect, url_for
 
