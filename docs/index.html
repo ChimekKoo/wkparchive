@@ -201,7 +201,7 @@
         // https://www.w3schools.com/howto/howto_js_sort_table.asp
         function sortTable(n) {
             if (document.querySelector("tbody").childElementCount > step) {
-                if (!confirm("Tabela jest bardzo długa i sortowanie może zająć dużo czasu. Czy napewno kontynuować?")) return;
+                if (!confirm("Tabela jest długa i sortowanie może zająć dużo czasu. Czy napewno kontynuować?")) return;
             }
             var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
             table = document.querySelector("table");
@@ -305,10 +305,8 @@
             updateHeadText();
         };
 
-        //sortTable(2); sortTable(2); // sort by year in descending order
         document.querySelectorAll("select").forEach(el => el.onchange = () => {
             updateResources();
-            clearRows();
             for (var i=0; i<Math.min(step,resources.length); i++) addRow(resources[i]);
             updateHeadText();
         });
