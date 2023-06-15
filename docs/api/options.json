@@ -4,8 +4,8 @@
     ["answers", "odpowiedzi"]
   ],
   "school": [
-    ["szkoła podstawowa", "szkoła podstawowa"],
-    ["gimnazjum", "gimnazjum"]
+    ["sp", "szkoła podstawowa"],
+    ["gim", "gimnazjum"]
   ],
   "year": [
     ["2022/2023", "2022/2023"],
