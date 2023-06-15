@@ -291,8 +291,7 @@
         }
         function addRow(resource) {
             var tr = `<tr onclick="window.open('pdf/${resource.id}.pdf', '_blank')">`;
-            Object.entries(optionsMapAll).forEach(el => {
-                var field = el[0];
+            ["voivodeship", "subject", "year", "stage", "school", "type"].forEach(field => {
                 tr += `<td x-value="${resource[field]}">${optionsMapAll[field][resource[field]]}</td>`;
             });
             document.querySelector("tbody").innerHTML += tr;
