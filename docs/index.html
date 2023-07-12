@@ -307,6 +307,10 @@
         document.querySelectorAll("select").forEach(el => el.onchange = () => {
             updateResources();
             for (var i=0; i<Math.min(step,resources.length); i++) addRow(resources[i]);
+            if (document.querySelector("tbody").childElementCount >= resources.length)
+                document.querySelector("#btn-show-more").style.display = "none";
+            else
+                document.querySelector("#btn-show-more").style.display = "";
             updateHeadText();
         });
 
