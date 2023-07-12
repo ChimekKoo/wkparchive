@@ -22,12 +22,9 @@ python3 srv.py
 and open `localhost:5000`.
 
 ## PDF preparation
-- download your file
-- convert it to PDF (for example [cloudconvert](https://cloudconvert.com/) does it really well)
-- rename to format `id.pdf` (where `id` is some unique random 8-digit number)
-- run `exiftool -all= id.pdf && rm -f id.pdf_original` to remove any metadata (replace `id`)
-- run `exiftool -Language=pl-PL id.pdf && rm -f id.pdf_original` to set language metadata to polish (replace `id`)
-- run `qpdf --linearize --replace-input id.pdf` to linearize the PDF (replace `id`)
+- download files
+- convert them to PDF (e.g. [cloudconvert](https://cloudconvert.com/) does it really well)
+- rename to format `id.pdf`, where `id` is a unique random number from `10000000` to `99999999`
+- move your files to one folder and run `make prep-myfolder VOIVODESHIP=myvoivodeship`, where `myfolder` is name of the folder where PDFs are in and `myvoivodeship` is name of the voivodeship of the resources
 - move your PDFs to `docs/pdf` folder (be careful to not overwrite any existing files - choose a not taken id)
-- add new entry `docs/api/resources.json` (template soon)
-- (commit and push your changes)
+- add new entries to `docs/api/resources.json`
