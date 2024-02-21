@@ -1,24 +1,20 @@
 {
   "type": [
     ["test", "test"],
-    ["answers", "odpowiedzi"]
+    ["ans", "odpowiedzi"]
   ],
   "school": [
     ["sp", "szkoła podstawowa"],
     ["gim", "gimnazjum"]
   ],
   "year": [
-    ["2022/2023", "2022/2023"],
-    ["2021/2022", "2021/2022"],
-    ["2020/2021", "2020/2021"],
-    ["2019/2020", "2019/2020"],
-    ["2018/2019", "2018/2019"],
-    ["2017/2018", "2017/2018"],
-    ["2016/2017", "2016/2017"],
-    ["2015/2016", "2015/2016"],
-    ["2014/2015", "2014/2015"],
-    ["2013/2014", "2013/2014"],
-    ["2012/2013", "2012/2013"]
+    ["2023", "2023/2024"],
+    ["2022", "2022/2023"],
+    ["2021", "2021/2022"],
+    ["2020", "2020/2021"],
+    ["2019", "2019/2020"],
+    ["2018", "2018/2019"],
+    ["2017", "2017/2018"]
   ],
   "stage": [
     ["1", "(1) szkolny"],
@@ -27,126 +23,70 @@
   ],
   "subject": [
     [
-      "biologia",
+      "bio",
       "biologia"
     ],
     [
-      "chemia",
+      "che",
       "chemia"
     ],
     [
-      "fizyka",
+      "fiz",
       "fizyka"
     ],
     [
-      "geografia",
+      "geo",
       "geografia"
     ],
     [
-      "historia",
+      "his",
       "historia"
     ],
     [
-      "język angielski",
+      "ang",
       "język angielski"
     ],
     [
-      "język francuski",
+      "fra",
       "język francuski"
     ],
     [
-      "język hiszpański",
+      "hip",
       "język hiszpański"
     ],
     [
-      "język niemiecki",
+      "nie",
       "język niemiecki"
     ],
     [
-      "język polski",
+      "pol",
       "język polski"
     ],
     [
-      "język rosyjski",
+      "ros",
       "język rosyjski"
     ],
     [
-      "konkurs wiedzy o mazowszu",
+      "kwm",
       "konkurs wiedzy o mazowszu"
     ],
     [
-      "matematyka",
+      "mat",
       "matematyka"
     ],
     [
-      "wiedza o społeczeństwie",
+      "wos",
       "wiedza o społeczeństwie"
     ]
   ],
   "voivodeship": [
     [
-      "dolnośląskie",
-      "dolnośląskie"
-    ],
-    [
-      "kujawsko-pomorskie",
-      "kujawsko-pomorskie"
-    ],
-    [
-      "lubelskie",
-      "lubelskie"
-    ],
-    [
-      "lubuskie",
-      "lubuskie"
-    ],
-    [
       "mazowieckie",
       "mazowieckie"
     ],
     [
-      "małopolskie",
-      "małopolskie"
-    ],
-    [
-      "opolskie",
-      "opolskie"
-    ],
-    [
-      "podkarpackie",
-      "podkarpackie"
-    ],
-    [
-      "podlaskie",
-      "podlaskie"
-    ],
-    [
-      "pomorskie",
-      "pomorskie"
-    ],
-    [
-      "warmińsko-mazurskie",
-      "warmińsko-mazurskie"
-    ],
-    [
-      "wielkopolskie",
-      "wielkopolskie"
-    ],
-    [
-      "zachodniopomorskie",
-      "zachodniopomorskie"
-    ],
-    [
-      "łódzkie",
+      "lodzkie",
       "łódzkie"
-    ],
-    [
-      "śląskie",
-      "śląskie"
-    ],
-    [
-      "świętokrzyskie",
-      "świętokrzyskie"
     ]
   ]
 }

@@ -7,7 +7,7 @@ prep-%: $(wildcard %/*.pdf)
 		exiftool -m -q -all= $$file; \
 		exiftool -m -q -Language="pl-PL" $$file; \
 		exiftool -m -q -Author="$$(echo '$(VOIVODESHIP)' | sed 's/.*/\u&/') Kuratorium Oświaty" $$file; \
-		exiftool -m -q -Creator="wkp-archiwum.pl" $$file; \
+		exiftool -m -q -Creator="wkparchive" $$file; \
 		rm -f $${file}_original; \
 		qpdf --linearize --replace-input $$file; \
 	done
